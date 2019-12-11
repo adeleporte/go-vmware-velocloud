@@ -18,7 +18,9 @@ import (
 	"encoding/xml"
 	"errors"
 	"fmt"
+	"log"
 	"io"
+	"log"
 	"mime/multipart"
 	"net/http"
 	"net/url"
@@ -229,14 +231,14 @@ func parameterToJson(obj interface{}) (string, error) {
 
 // callAPI do the request.
 func (c *APIClient) callAPI(request *http.Request) (*http.Response, error) {
-	fmt.Printf("\033[1;34m%s\033[0m\n", "REQUEST:")
-	fmt.Printf("\033[1;34m%s\033[0m\n", request.URL)
-	fmt.Printf("\033[1;34m%s\033[0m\n", request.Header)
-	fmt.Printf("\033[1;34m%s\033[0m\n", request.Body)
+	log.Printf("\033[1;34m%s\033[0m\n", "REQUEST:")
+	log.Printf("\033[1;34m%s\033[0m\n", request.URL)
+	log.Printf("\033[1;34m%s\033[0m\n", request.Header)
+	log.Printf("\033[1;34m%s\033[0m\n", request.Body)
 	res, err := c.cfg.HTTPClient.Do(request)
 
-	fmt.Printf("\033[1;32m%s\033[0m\n", "RESPONSE:")
-	fmt.Printf("\033[1;32m%s\033[0m\n", res.Status)
+	log.Printf("\033[1;32m%s\033[0m\n", "RESPONSE:")
+	log.Printf("\033[1;32m%s\033[0m\n", res.Status)
 
 	//fmt.Print("body: ")
 	//fmt.Println("\033[1;32m%s\033[0m", fmt.Sprint(res.Status))

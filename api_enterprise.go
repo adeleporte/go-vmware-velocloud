@@ -13,6 +13,7 @@ package openapi
 import (
 	_context "context"
 	"fmt"
+	"log"
 	_ioutil "io/ioutil"
 	_nethttp "net/http"
 	_neturl "net/url"
@@ -1505,7 +1506,7 @@ func (a *EnterpriseApiService) EnterpriseGetEnterpriseConfigurations(ctx _contex
 		return localVarReturnValue, localVarHttpResponse, err
 	}
 
-	fmt.Printf("\033[1;32m%s\033[0m\n", string(localVarBody))
+	log.Printf("\033[1;32m%s\033[0m\n", string(localVarBody))
 
 	if localVarHttpResponse.StatusCode >= 300 {
 		newErr := GenericOpenAPIError{
