@@ -12,9 +12,8 @@ package openapi
 
 import (
 	_context "context"
-	"fmt"
-	"log"
 	_ioutil "io/ioutil"
+	"log"
 	_nethttp "net/http"
 	_neturl "net/url"
 )

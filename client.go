@@ -18,7 +18,6 @@ import (
 	"encoding/xml"
 	"errors"
 	"fmt"
-	"log"
 	"io"
 	"log"
 	"mime/multipart"
