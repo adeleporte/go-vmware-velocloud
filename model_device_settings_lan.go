@@ -12,7 +12,7 @@ package openapi
 
 type DeviceSettingsLan struct {
 	Interfaces []DeviceSettingsLanInterface `json:"interfaces,omitempty"`
-	Management Subnet                       `json:"management,omitempty"`
+	Management *Subnet                      `json:"management,omitempty"`
 	Networks   []DeviceSettingsLanNetwork   `json:"networks,omitempty"`
 	Visibility DeviceSettingsLanVisibility  `json:"visibility,omitempty"`
 }
