@@ -1,8 +1,5 @@
 module github.com/adeleporte/go-vmware-velocloud
 
-require (
-	github.com/antihax/optional v0.0.0-20180406194304-ca021399b1a6
-	golang.org/x/oauth2 v0.0.0-20190402181905-9f3314589c9a
-)
-
 go 1.13
+
+require golang.org/x/oauth2 v0.0.0-20191202225959-858c2ad4c8b6
