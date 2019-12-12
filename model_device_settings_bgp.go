@@ -13,7 +13,7 @@ package openapi
 type DeviceSettingsBgp struct {
 	Enabled                bool                                `json:"enabled"`
 	Override               bool                                `json:"override"`
-	ASN                    string                              `json:"asn"`
+	ASN                    string                              `json:"ASN"`
 	ConnectedRoutes        bool                                `json:"connectedRoutes"`
 	DefaultRoute           DeviceSettingsBgpDefaultRoute       `json:"defaultRoute"`
 	DisableASPathCarryOver bool                                `json:"disableASPathCarryOver"`
